@@ -10,5 +10,5 @@ person = {
     }
 
 #printing the values of the dictionary.
-for value in person:
-    print(person[value])
+for characteristic in person:
+    print(person[characteristic])
