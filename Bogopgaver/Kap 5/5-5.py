@@ -1,5 +1,5 @@
 """Øvelse med if-elif-else statement
-NB: HDet ville reelt være mere oplagt med et if-elif-elif statement sådan at kun gyldige farver kunne give point"""
+NB: Det ville reelt være mere oplagt med et if-elif-elif statement sådan at kun gyldige farver kunne give point"""
 
 #Test hvor if-delen kører
 alien_color = "green"
