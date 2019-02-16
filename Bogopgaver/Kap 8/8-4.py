@@ -5,6 +5,8 @@ Make a large and a medium shirt with the default message and a shirt of any size
 
 #defining function using two parameters, now with added default values
 def make_shirt(size = "L", message = "I love Python"):
+    """This function creates a t-shirt with a size and message provded via the parameters. Both parameters have default
+    values in case none are provided by the function call"""
     print("Making a size " + str(size) + " t-shirt with the following quote: " + '"' + message + '"')
 
 #making a large shirt with the default message. No need to define arguments.

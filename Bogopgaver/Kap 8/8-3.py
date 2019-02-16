@@ -6,6 +6,7 @@ Call function with positional arguments and then again with keyword arguments"""
 
 #defining function using two parameters
 def make_shirt(size, message):
+    """This function creates a sentence about a t-shirt of a size and with a message provided via the parameters."""
     print("Making a size " + str(size) + " t-shirt with the following quote: " + '"' + message + '"')
 
 #calling the function with positional arguments

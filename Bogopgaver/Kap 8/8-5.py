@@ -5,6 +5,8 @@ Call function for three cities, one of which should not be in default country"""
 
 #defining the function
 def describe_city(name, country = "denmark"):
+    """This function prints a city and its country, both provided via the parameters. One parameter has a default value
+    which is used if another is not specified in the function call."""
     print(name.title() + " is a city in " + country.title())
 
 #call #1
