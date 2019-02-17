@@ -21,7 +21,7 @@ while True:
     if artist.lower() == "q":
         break
     title = input("Please enter the album's name: ")
-    # checking if the user chose to quit
+    # checking if the user chose to quitNo i
     if title.lower() == "q":
         break
     #making the album and printing it
