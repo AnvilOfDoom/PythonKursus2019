@@ -24,3 +24,7 @@ for value in list_three:
 
 sum_of_three = sum(list_three) / count
 print(sum_of_three)
+
+#eksempel på at importere fra et bibliotek
+from statistics import mean
+print(mean(list_three))
