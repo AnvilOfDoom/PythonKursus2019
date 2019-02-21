@@ -11,7 +11,7 @@ dk_en_ordbog = {}
 #information om hvordan brugeren kan afslutte programmet:
 print("Du kan taste 'q' for at afslutte indtastningen, når du ikke vil tilføje flere ord.")
 
-#det faktiske while loop
+#det faktiske while loop, der opbygger ordbogen
 while True:
     dansk = input("Indtast et dansk ord: ") #indtast det danske ord
     if dansk.lower() == "q":        #tjekker om brugeren vil afslutte
@@ -26,18 +26,18 @@ for key, value in dk_en_ordbog.items(): #udskriver ordbogen
 
 #Søgefunktion
 print("Du får nu mulighed for at søge efter ord i ordbogen, sådan at oversættelsen slås op for dig. Tryk q når "
-      "ikke skal bruge flere oversættelser.")
+      "ikke skal bruge flere oversættelser.") #præsentation, fortæller også om exit kommando.
 
 while True:
     search = input("Indtast et dansk ord, du vil have oversat til engelsk, hvis ordbogen har ordet, så får du "
                "oversættelsen tilbage: ")
-    if search.lower() == "q":
+    if search.lower() == "q":   #lukker programmet
         break
     else:
         for key, value in dk_en_ordbog.items():
-            if search == key:
-                print("Ordet betyder: " + value)
+            if search.lower() == key.lower():#tjekker om søgeordet findes i ordbogen. pga lower() case insensitive
+                print("Ordet betyder: " + value.title())
                 break
             else:
-                print("Din søgning gav desværre intet resultat.")
+                print("Din søgning gav desværre intet resultat.") #søgningen gav intet resultat
 
