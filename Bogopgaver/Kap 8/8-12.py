@@ -6,6 +6,7 @@ is being ordered. Call the function three tiems, using a different
 number of arguments each time."""
 
 def make_sandwich(*contents):
+    """prints a list of sandwich contents based on function call"""
     sandwich = [] #empty list to contain the items entered in the function call.
     for item in contents: #tilføjer ingredienser til sandwich-listen
         sandwich.append(item)
