@@ -14,9 +14,7 @@ def make_great(magicians):
     while magicians:
         magician = magicians.pop() + " the great"
         great_magicians.append(magician)
-    for great_magician in great_magicians:
-        magicians.append(great_magician)
-    return magicians
+    return great_magicians
 
 #calling the function - improve by defining variables with the function and using the "show magicians" function
 print(make_great(magician_names[:]))
