@@ -37,3 +37,22 @@ class Users():
     def reset_login_attempts(self): #new method to reset login attempts
         """Sets login attempts to 0"""
         self.login_attempts = 0
+
+#subclass for admin users
+
+class Admin(Users):
+    """This class is used for admin users"""
+    def __init__(self, first_name, last_name, user_name, age):
+        """initializes an admin"""
+        super().__init__(first_name, last_name, user_name, age)
+        self.privileges = ["can add post", "can delete post", "can ban user"]   #new attribute for admins
+
+    def show_privileges(self):
+        """Method to print the privileges of the admin user"""
+        print("User " + self.user_name + " has the following privileges:")
+        for privilege in self.privileges:
+            print(privilege.title())
+
+#creating user and then printing privileges
+anvil = Admin("søren", "bøye", "anvil", 31)
+anvil.show_privileges()

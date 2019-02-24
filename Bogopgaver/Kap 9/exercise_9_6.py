@@ -34,6 +34,7 @@ class Restaurant():
         """Add given number to number_served"""
         self.number_served += customers
 
+#subclass for ice cream stands
 class IceCreamStand(Restaurant):
     """Represents ice cream stands as a subcategory of restaurants"""
 
