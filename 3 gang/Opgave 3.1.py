@@ -17,7 +17,7 @@ print(filosof != "Aristoteles")
 
 
 #Numerisk sammenligning, eksempel
-print("\nNumerisk sammenligning (eksempel) - er 15 større end 17?".title())
+print("\nSammenligning af tal (eksempel) - er 15 større end 17?")
 
 alder_01 = 15
 alder_02 = 17
