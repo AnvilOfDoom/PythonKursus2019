@@ -12,7 +12,7 @@ search = "land"
 for land in lande: #den kigger i hver værdi i listen
     if search in land: #søgestrengen defineres/refereres til.
         print("Succes! " + land.title() + " indeholder din søgning '" + search +"'")
-        break # når break er her, så stopper den når den første resultat.
+        break # når break er her, så stopper den når den når første resultat.
     else: #hvis søgestrengen ikke findes
         print("Desværre! " + land.title() + " indeholder desværre ikke din søgning '" + search + "'")
 
