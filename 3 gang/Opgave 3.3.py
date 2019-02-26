@@ -9,15 +9,15 @@ navne = {"emil": "bøye",
          }
 
 #loop der udskriver både for- og efternavn:
-for navn in navne.keys():
-    print(navn.title() + " " + navne[navn].title())
+for fornavn, efternavn in navne.items():
+    print(fornavn.title() + " " + efternavn.title())
 
 print("\n##############")
 #loop der udskriver fornavnene
-for navn in navne.keys():
-    print(navn.title())
+for fornavn in navne.keys():
+    print(fornavn.title())
 
 print("\n##############")
 # loop der udskriver efternavnene
-for navn in navne.keys():
-    print(navne[navn].title())
+for efternavn in navne.values():
+    print(efternavn.title())

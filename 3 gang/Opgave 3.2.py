@@ -7,3 +7,4 @@ navne = {"emil": "bøye",
          "søren": "svendsen",
          "kasper": "habbakuksen",
          }
+
