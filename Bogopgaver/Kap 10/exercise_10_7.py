@@ -8,17 +8,17 @@ print("This program lets you enter two numbers one after the other "
 while True:
     try:
         first_number = input("Please enter the first number: ")    #The first number
-        if first_number == "q":
+        if first_number == "q":                                    #option to quit
             break
         else:
-            first_number = int(first_number)
-        second_number = input("Please enter the second number: ")  # The second number
-        if second_number == "q":
+            first_number = int(first_number)                       #Converting input to integer
+        second_number = input("Please enter the second number: ")  #The second number
+        if second_number == "q":                                   #option to quit
             break
         else:
-            second_number = int(second_number)
+            second_number = int(second_number)                     #Converting input to integer
     except ValueError:
         print("Please enter a number with no decimals.")
     else:
-        result = first_number + second_number
+        result = first_number + second_number                      #calculating the sum
         print(result)
