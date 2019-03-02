@@ -1,3 +1,6 @@
+###### hvis der er tid, så spørg Martin til unittest.main()
+
+
 """Opgave 1 - definition af en funktion med 2 parametre
 Lav opgave 8-3 og  8-5 på side 141 i bogen.
 """
