@@ -24,13 +24,22 @@ tal = [20,30,40,50,60,70]
 for number in tal:
     if number < 50:     #udelukker tallene i listen, der er højere end 40
         print(number)
+    #else-statement gør det (nok) mere effektivt
+    else:
+        break
 
 
 
 #eksperiment med uendelig for-løkke
 sisyfos_arbejde = ["sisyfos", "sten"]
-
+"""
 for string in sisyfos_arbejde:
     sisyfos_arbejde.append(string)
     print("uendelig løkke")
-    print(len(sisyfos_arbejde)
+    print(len(sisyfos_arbejde))
+"""
+
+#alternativ fra underviseren:
+import itertools
+for i in itertools.count():
+    print("uendelig løkke")

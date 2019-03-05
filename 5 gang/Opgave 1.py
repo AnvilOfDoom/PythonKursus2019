@@ -19,11 +19,10 @@ def make_shirt(size, message):
 #calling the function with positional arguments
 make_shirt(18, "Your mom!")
 
-print("")
 #calling the function with keyword arguments
 make_shirt(message="Your mom!", size=18)
 
-
+print("")
 """8-5. Cities
 Write function describe_city with two parameters: name and country. Function should print sentence with both parameters.
 Parameter for country should have default value.
