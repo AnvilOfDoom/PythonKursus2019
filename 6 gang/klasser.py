@@ -1,4 +1,6 @@
 #klasse til opgave 1
+import re #til opgave 5
+
 class Materiale():
     """En klasse  til at beskrive biblioteksmateriale"""
     def __init__(self, idnr:int, titel, aarstal:int, antal:int=1):
@@ -24,6 +26,9 @@ class Materiale():
     def udlaan(self):   #opgave 5
         """Øger antal_udlaan med 1"""
         self.antal_udlaan += 1
+
+    def matchTitle(self, search):
+        return re.search(search, self.titel)
 
 
 #klasser til opgave 2
