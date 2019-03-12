@@ -27,4 +27,4 @@ print("")
 minListe = [bog1,film1] # definer en liste med de 2 objekter
 
 for m in minListe:
-   print(m.toString())
+   print(m.tostring())
