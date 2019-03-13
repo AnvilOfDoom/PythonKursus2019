@@ -25,10 +25,11 @@ class Materiale():
 
     def udlaan(self):   #opgave 5
         """Øger antal_udlaan med 1"""
-        self.antal_udlaan += 1
+        if self.kanudlaane():
+            self.antal_udlaan += 1
 
-    def matchtitle(self, search):
-        return re.search(search, self.titel)
+    def matchtitle(self, soeg):
+        return re.search(soeg, self.titel)
 
 
 #klasser til opgave 2
